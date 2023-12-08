@@ -6,7 +6,7 @@ const Page = () => {
     <div>
       <h1 className="text-center font-bold text-3xl">About</h1>
       <section className="lg:px-20 h-[calc(100vh-100px)] flex items-center justify-center px-4">
-        <div className="flex  lg:flex-row flex-col-reverse items-center lg:gap-0 gap-5 justify-between">
+        <div className="flex  lg:flex-row flex-col-reverse items-center lg:gap-0 gap-5 py-5 lg:py-20 justify-between">
           <div>
             <h2 className="text-accent font-bold text-2xl underline underline-offset-2">
               Get To Know Me

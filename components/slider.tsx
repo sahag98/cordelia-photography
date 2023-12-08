@@ -3,7 +3,15 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-const images = ["/hero.png", "/img2.jpg", "/view.jpg", "/bridge.jpg"];
+const images = [
+  {
+    img: "/hero.png",
+    blurImg: "/hero.png",
+  },
+  { img: "/img2.jpg", blurImg: "/img2br.jpg" },
+  { img: "/view.jpg", blurImg: "/viewbr.jpg" },
+  { img: "/bridge.jpg", blurImg: "/bridgebr.jpg" },
+];
 
 const Slider = () => {
   const [index, setIndex] = useState(0);
@@ -19,7 +27,7 @@ const Slider = () => {
   console.log(index);
 
   return (
-    <div className="relative w-full -mt-5 justify-center items-center lg:h-screen bg-slate-200 md:h-[500px] h-[400px] overflow-hidden">
+    <div className="relative w-full lg:mt-0 -mt-5 justify-center items-center lg:h-screen bg-slate-200 md:h-[500px] h-[400px] overflow-hidden">
       {images.map((imageUrl, i) => (
         <div
           key={i}
@@ -31,7 +39,9 @@ const Slider = () => {
           }`}
         >
           <Image
-            src={imageUrl}
+            src={imageUrl.img}
+            blurDataURL={imageUrl.blurImg}
+            placeholder="blur"
             alt={`image-${i}`}
             className="w-full object-cover h-full md:h-[500px] lg:h-full"
             width={2000}

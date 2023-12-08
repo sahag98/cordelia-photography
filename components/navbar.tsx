@@ -51,13 +51,15 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between relative lg:px-20 pr-2 py-0 items-center  w-full">
-      <Image
-        src="/navbar-logo.png"
-        width={278}
-        className="w-44 md:w-52"
-        height={118}
-        alt="navbar-logo"
-      />
+      <Link href="/">
+        <Image
+          src="/navbar-logo.png"
+          width={278}
+          className="w-44 md:w-52"
+          height={118}
+          alt="navbar-logo"
+        />
+      </Link>
       <ul className="hidden md:flex items-center gap-7">
         <Link
           href="/"

@@ -1,6 +1,7 @@
 // components/MobileNav.js
 import { motion } from "framer-motion";
 import { X } from "lucide-react";
+import Link from "next/link";
 
 const MOBILE_NAV_ITEMS = [
   {
@@ -51,7 +52,7 @@ const MobileNav = ({ mobileNavOpen, setMobileNavOpen }: any) => {
       y: "0%",
       transition: {
         delay: 0.15,
-        duration: 1.1,
+        duration: 0.5,
         ease: [0.74, 0, 0.19, 1.02],
       },
     },
@@ -138,7 +139,16 @@ const MobileNav = ({ mobileNavOpen, setMobileNavOpen }: any) => {
                 className="text-xl font-semibold text-foreground text-center"
                 variants={liVariant}
               >
-                {navItem.navTitle}
+                <Link
+                  onClick={() => setMobileNavOpen(false)}
+                  href={
+                    navItem.navTitle.toLowerCase() === "home"
+                      ? "/"
+                      : navItem.navTitle.toLowerCase()
+                  }
+                >
+                  {navItem.navTitle}
+                </Link>
               </motion.div>
             </motion.li>
           ))}

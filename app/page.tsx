@@ -22,7 +22,7 @@ export default function Home() {
           size={"lg"}
           className="self-end md:hidden mt-2 w-full font-semibold"
         >
-          Book Now
+          Get In Touch
         </Button>
       </div>
       <Slider />

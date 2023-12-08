@@ -20,7 +20,7 @@ export default function Home() {
         </div>
         <Button
           size={"lg"}
-          className="self-end md:hidden mt-2 w-full font-semibold"
+          className="self-end md:hidden  w-full font-semibold"
         >
           Get In Touch
         </Button>

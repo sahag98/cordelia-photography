@@ -19,7 +19,7 @@ const Slider = () => {
   console.log(index);
 
   return (
-    <div className="relative w-full justify-center items-center lg:h-screen bg-slate-200 md:h-[500px] h-[400px] overflow-hidden">
+    <div className="relative w-full -mt-5 justify-center items-center lg:h-screen bg-slate-200 md:h-[500px] h-[400px] overflow-hidden">
       {images.map((imageUrl, i) => (
         <div
           key={i}

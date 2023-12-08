@@ -13,16 +13,16 @@ const Page = () => {
             </h2>
             <h3 className="font-semibold text-lg">Hi, My name is Cordelia!</h3>
             <p className="text-lg lg:w-1/2">
-              I’m so glad you’re here. I am a Southern Ontario portrait and
-              lifestyle photographer serving Niagara, the Greater Hamilton Area,
-              and beyond. I love Jesus and have a passion for capturing life’s
-              sweetest moments.{" "}
+              I&apos;m so glad you&apos;re here. I am a Southern Ontario
+              portrait and lifestyle photographer serving Niagara, the Greater
+              Hamilton Area, and beyond. I love Jesus and have a passion for
+              capturing life&apos;s sweetest moments.
             </p>
             <br />
             <p className="text-lg lg:w-1/2">
-              Whether it’s the biggest day of your life, or the smaller moments
-              in your day to day, your story deserves to be told, and I would
-              love to help you do that.{" "}
+              Whether it&apos;s the biggest day of your life, or the smaller
+              moments in your day to day, your story deserves to be told, and I
+              would love to help you do that.
             </p>
           </div>
           <div className="relative">

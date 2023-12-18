@@ -9,7 +9,7 @@ export default function Home() {
     <main className="flex gap-10 md:gap-3 flex-col items-center justify-center">
       <div className="flex flex-col px-2 gap-1 justify-center items-center">
         <h1 className="text-5xl font-semibold tracking-widest italic">
-          Making <span className="text-accent">Stories</span> Known
+          Making Stories Known
         </h1>
         <div className="flex flex-col items-center">
           <p className="text-center md:text-start">

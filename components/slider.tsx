@@ -5,12 +5,18 @@ import { useState, useEffect } from "react";
 
 const images = [
   {
-    img: "/hero.png",
-    blurImg: "/hero.png",
+    img: "/1.jpg",
   },
-  { img: "/img2.jpg", blurImg: "/img2br.jpg" },
-  { img: "/view.jpg", blurImg: "/viewbr.jpg" },
-  { img: "/bridge.jpg", blurImg: "/bridgebr.jpg" },
+  { img: "/2.jpg" },
+  { img: "/3.jpg" },
+  { img: "/4.jpg" },
+  { img: "/5.jpg" },
+  { img: "/6.jpg" },
+  { img: "/7.jpg" },
+  { img: "/8.jpg" },
+  { img: "/9.jpg" },
+  { img: "/10.jpg" },
+  { img: "/11.jpg" },
 ];
 
 const Slider = () => {
@@ -40,8 +46,8 @@ const Slider = () => {
         >
           <Image
             src={imageUrl.img}
-            blurDataURL={imageUrl.blurImg}
-            placeholder="blur"
+            // blurDataURL={imageUrl.blurImg}
+            // placeholder="blur"
             alt={`image-${i}`}
             className="w-full object-cover h-full md:h-[500px] lg:h-full"
             width={2000}

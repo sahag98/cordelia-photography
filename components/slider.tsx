@@ -15,7 +15,6 @@ const images = [
   { img: "/7.jpg" },
   { img: "/8.jpg" },
   { img: "/9.jpg" },
-  { img: "/10.jpg" },
   { img: "/11.jpg" },
 ];
 

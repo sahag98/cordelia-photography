@@ -1,5 +1,11 @@
 import ImageGallery from "@/components/imagGallery";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Portfolio",
+  description: "Portfolio of my images",
+};
 
 const Page = () => {
   const images = [

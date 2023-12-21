@@ -93,7 +93,7 @@ const Navbar = () => {
         />
         <Menu
           onClick={() => setMobileNavOpen(true)}
-          className="w-8 h-8 md:hidden text-primary"
+          className="w-8 h-8 lg:hidden md:hidden text-primary"
         />
       </div>
       {/* <AnimatePresence>
@@ -131,7 +131,7 @@ const Navbar = () => {
           </motion.aside>
         )}
       </AnimatePresence> */}
-      <Link href="/contact">
+      <Link className="hidden lg:flex" href="/contact">
         <Button className="font-semibold hidden md:flex">Get In Touch</Button>
       </Link>
     </nav>

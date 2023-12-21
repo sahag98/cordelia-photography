@@ -1,8 +1,19 @@
-// components/ImageGallery.js
-import { isMobile } from "@/lib/isMobile";
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import MyModal from "./imageModal";
 
 const ImageGallery = ({ images }: any) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedImg, setSelectedImg] = useState("");
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  function openModal(image: any) {
+    setSelectedImg(image);
+    setIsOpen(true);
+  }
+
   const MAX_COLUMNS = 3;
 
   function getColumns(colIndex: number) {
@@ -26,9 +37,18 @@ const ImageGallery = ({ images }: any) => {
                   className="overflow-hidden rounded-md shadow-md"
                 >
                   <img
-                    className="w-full h-auto rounded-md lg:rounded-lg"
+                    onClick={() => openModal(image.url!)}
+                    className="w-full h-auto rounded-md cursor-pointer lg:rounded-lg"
                     src={image.url}
                     alt={image.alt}
+                  />
+                  <MyModal
+                    isOpen={isOpen}
+                    setIsOpen={setIsOpen}
+                    closeModal={closeModal}
+                    openModal={openModal}
+                    selectedImg={selectedImg}
+                    setSelectedImg={setSelectedImg}
                   />
                 </div>
               )

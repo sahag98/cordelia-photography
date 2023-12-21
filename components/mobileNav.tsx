@@ -154,8 +154,12 @@ const MobileNav = ({ mobileNavOpen, setMobileNavOpen }: any) => {
           ))}
         </motion.ul>
         <motion.div variants={fadeInVariant} className="contact">
-          <h5>Phone number here</h5>
-          <h5>email here</h5>
+          <a href="tel:365-888-4628">
+            <h5>(365) 888-4628</h5>
+          </a>
+          <a href="mailto:info@cordeliafaithphotography.ca">
+            <h5>info@cordeliafaithphotography.ca</h5>
+          </a>
         </motion.div>
       </motion.div>
     </motion.nav>

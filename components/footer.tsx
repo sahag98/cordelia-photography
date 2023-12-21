@@ -1,4 +1,5 @@
 import { Instagram } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -8,9 +9,13 @@ const Footer = () => {
         © 2023 ALL RIGHTS RESERVED.
       </span>
       <section className="flex cursor-pointer items-center gap-3">
-        <div className="bg-secondary rounded-full p-2">
+        <Link
+          href="https://www.instagram.com/cordelia.faith.photography/"
+          target="blank"
+          className="bg-secondary rounded-full p-2"
+        >
           <Instagram className="text-accent" />
-        </div>
+        </Link>
         {/* <span className="italic text-xs md:text-base">
           cordelia.faith.photography
         </span> */}

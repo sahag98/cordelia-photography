@@ -10,39 +10,163 @@ export const metadata: Metadata = {
 const Page = () => {
   const images = [
     {
-      url: "https://images.pexels.com/photos/16806729/pexels-photo-16806729/free-photo-of-a-single-white-cloud-against-blue-sky.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      url: "/m1.jpg",
       alt: "Image 1",
     },
     {
-      url: "https://images.pexels.com/photos/18221948/pexels-photo-18221948/free-photo-of-beautiful-brunette-woman-in-white-off-the-shoulder-dress-standing-on-a-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      url: "/m3.jpg",
       alt: "Image 2",
     },
     {
-      url: "https://images.pexels.com/photos/18111091/pexels-photo-18111091/free-photo-of-harbor-buildings-reflecting-in-marina-waters.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      url: "/m11.jpg",
       alt: "Image 3",
     },
     {
-      url: "https://images.pexels.com/photos/16143559/pexels-photo-16143559/free-photo-of-landscape-of-rocky-snowcapped-mountains.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      url: "/m25.jpg",
       alt: "Image 4",
     },
     {
-      url: "https://images.pexels.com/photos/5646986/pexels-photo-5646986.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      url: "/m38.jpg",
       alt: "Image 5",
     },
     {
-      url: "https://images.pexels.com/photos/18272969/pexels-photo-18272969/free-photo-of-lake-and-snow-on-rocks-behind.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      url: "/m2.jpg",
       alt: "Image 6",
     },
     {
-      url: "https://images.pexels.com/photos/18640994/pexels-photo-18640994/free-photo-of-back-of-a-woman-walking-along-a-wet-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      url: "/m26.jpg",
       alt: "Image 7",
     },
     {
-      url: "https://images.pexels.com/photos/8123680/pexels-photo-8123680.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      url: "/m32.jpg",
       alt: "Image 8",
     },
+    {
+      url: "/m21.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m9.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m15.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m16.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m24.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m40.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m33.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m20.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m30.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m31.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m39.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m10.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m17.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m22.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m14.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m28.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m19.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m5.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m23.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m36.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m7.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m8.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m27.jpg",
+      alt: "Image 8",
+    },
+
+    {
+      url: "/m6.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m37.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m29.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m41.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m13.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m2.jpg",
+      alt: "Image 8",
+    },
+    {
+      url: "/m12.jpg",
+      alt: "Image 8",
+    },
+
     // Add more images as needed
   ];
+
+  console.log(images.length);
 
   return (
     <div className="lg:px-20 px-4">

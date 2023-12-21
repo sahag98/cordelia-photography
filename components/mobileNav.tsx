@@ -6,22 +6,18 @@ import Link from "next/link";
 const MOBILE_NAV_ITEMS = [
   {
     id: 0,
-    navTitle: "Home",
-  },
-  {
-    id: 1,
     navTitle: "About",
   },
   {
-    id: 2,
+    id: 1,
     navTitle: "Portfolio",
   },
   {
-    id: 3,
+    id: 2,
     navTitle: "Investment",
   },
   {
-    id: 4,
+    id: 3,
     navTitle: "Get In Touch",
   },
 ];
@@ -141,11 +137,7 @@ const MobileNav = ({ mobileNavOpen, setMobileNavOpen }: any) => {
               >
                 <Link
                   onClick={() => setMobileNavOpen(false)}
-                  href={
-                    navItem.navTitle.toLowerCase() === "home"
-                      ? "/"
-                      : navItem.navTitle.toLowerCase()
-                  }
+                  href={navItem.navTitle.toLowerCase()}
                 >
                   {navItem.navTitle}
                 </Link>

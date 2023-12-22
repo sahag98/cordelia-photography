@@ -18,7 +18,7 @@ const MOBILE_NAV_ITEMS = [
   },
   {
     id: 3,
-    navTitle: "Get In Touch",
+    navTitle: "contact",
   },
 ];
 

@@ -1,13 +1,17 @@
 import ImageGallery from "@/components/imagGallery";
 import { Metadata } from "next";
 import React from "react";
+import { getPictures } from "@/sanity/sanity-utils";
 
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "Portfolio of my images",
 };
 
-const Page = () => {
+const Page = async () => {
+  const pictures = await getPictures();
+
+  console.log("pics: ", pictures);
   const images = [
     {
       url: "/m1.jpg",
@@ -170,7 +174,7 @@ const Page = () => {
 
   return (
     <div className="lg:px-20 px-4">
-      <ImageGallery images={images} />
+      <ImageGallery images={pictures} />
     </div>
   );
 };

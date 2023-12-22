@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import MyModal from "./imageModal";
+import { Pictures } from "@/types/Types";
 
-const ImageGallery = ({ images }: any) => {
+const ImageGallery = ({ images }: { images: Pictures }) => {
+  console.log("client: ", images);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImg, setSelectedImg] = useState("");
   function closeModal() {
@@ -29,7 +31,11 @@ const ImageGallery = ({ images }: any) => {
           <div key={idx} className="flex flex-col gap-4 lg:gap-4">
             {column.map(
               (
-                image: { url: string | undefined; alt: string | undefined },
+                image: {
+                  url: any;
+                  image: string | undefined;
+                  ult: string | undefined;
+                },
                 index: React.Key | null | undefined
               ) => (
                 <div
@@ -39,8 +45,8 @@ const ImageGallery = ({ images }: any) => {
                   <img
                     onClick={() => openModal(image.url!)}
                     className="w-full h-auto rounded-md cursor-pointer lg:rounded-lg"
-                    src={image.url}
-                    alt={image.alt}
+                    src={image.image}
+                    alt={image.ult}
                   />
                   <MyModal
                     isOpen={isOpen}

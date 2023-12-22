@@ -31,7 +31,7 @@ const formSchema = z.object({
   message: z.string().min(2, {
     message: "Message must be at least 2 characters.",
   }),
-  type: z.enum(["mini", "full", "byo"], {
+  type: z.enum(["mini", "full", "byo", "other"], {
     required_error: "You need to select a session type.",
   }),
 });
@@ -157,6 +157,14 @@ const Contact = () => {
                           </FormControl>
                           <FormLabel className="font-normal text-background">
                             BYO
+                          </FormLabel>
+                        </FormItem>
+                        <FormItem className="flex items-center space-x-2 space-y-0">
+                          <FormControl>
+                            <RadioGroupItem value="other" />
+                          </FormControl>
+                          <FormLabel className="font-normal text-background">
+                            Other
                           </FormLabel>
                         </FormItem>
                       </RadioGroup>

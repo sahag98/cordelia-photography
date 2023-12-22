@@ -6,7 +6,7 @@ export async function POST(request: NextRequest) {
   const { email, name, message, type } = await request.json();
   console.log("server: ", email, name, message, type);
   const transport = nodemailer.createTransport({
-    service: "gmail",
+    service: "hotmail",
     /* 
       setting service as 'gmail' is same as providing these setings:
       host: "smtp.gmail.com",
@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
   const mailOptions: Mail.Options = {
     from: process.env.MY_EMAIL,
     to: process.env.MY_EMAIL,
-    // cc: email, (uncomment this line if you want to send a copy to the sender)
+    cc: "info@cordeliafaithphotography.ca",
     subject: `Message from ${name} (${email})`,
     text: message + `Type of session: ${type}`,
   };

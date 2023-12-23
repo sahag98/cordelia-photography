@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
     to: process.env.MY_EMAIL,
     cc: "info@cordeliafaithphotography.ca",
     subject: `Message from ${name} (${email})`,
-    text: message + `Type of session: ${type}`,
+    text: message + ` Type of session: ${type}`,
   };
 
   const sendMailPromise = () =>
@@ -43,6 +43,7 @@ export async function POST(request: NextRequest) {
 
   try {
     await sendMailPromise();
+    console.log("email sent");
     return NextResponse.json({ message: "Email sent" });
   } catch (err) {
     return NextResponse.json({ error: err }, { status: 500 });

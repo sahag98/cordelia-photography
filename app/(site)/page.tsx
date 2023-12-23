@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Circle } from "lucide-react";
 import Slider from "@/components/slider";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,12 +19,14 @@ export default function Home() {
           </p>
           <span className="text-accent">- Psalm 139:14</span>
         </div>
-        <Button
-          size={"lg"}
-          className="self-end md:hidden  w-full font-semibold"
-        >
-          Get In Touch
-        </Button>
+        <Link className="self-end md:hidden w-full" href="/contact">
+          <Button
+            size={"lg"}
+            className="self-end md:hidden w-full font-semibold"
+          >
+            Get In Touch
+          </Button>
+        </Link>
       </div>
       <Slider />
       {/* <div className="w-full flex items-center justify-center relative">

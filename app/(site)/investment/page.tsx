@@ -15,7 +15,7 @@ const Page = () => {
       id: 1,
       title: "Mini",
       price: 50,
-      description: "Still figuring it out",
+      description: "Perfect for holidays or small children.",
       perks: [
         { id: 1, text: "20 minutes" },
         { id: 2, text: "5 finished digital images" },
@@ -26,7 +26,7 @@ const Page = () => {
       id: 2,
       title: "Standard",
       price: 100,
-      description: "Perfect for branding and family photos",
+      description: "Perfect for branding and family photos.",
       perks: [
         { id: 1, text: "60 minutes" },
         { id: 2, text: "40-50 finished digital images" },
@@ -37,7 +37,7 @@ const Page = () => {
       id: 3,
       title: "BYO",
       price: 75,
-      description: "Perfect for courthouse weddings or small events",
+      description: "Perfect for courthouse weddings or small events.",
       perks: [
         { id: 1, text: "Up to 4 hours" },
         { id: 2, text: "$2/finished digital images" },

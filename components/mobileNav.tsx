@@ -7,18 +7,22 @@ const MOBILE_NAV_ITEMS = [
   {
     id: 0,
     navTitle: "About",
+    link: "about",
   },
   {
     id: 1,
     navTitle: "Portfolio",
+    link: "portfolio",
   },
   {
     id: 2,
     navTitle: "Investment",
+    link: "investment",
   },
   {
     id: 3,
     navTitle: "Get In Touch",
+    link: "getintouch",
   },
 ];
 
@@ -137,7 +141,7 @@ const MobileNav = ({ mobileNavOpen, setMobileNavOpen }: any) => {
               >
                 <Link
                   onClick={() => setMobileNavOpen(false)}
-                  href={navItem.navTitle.toLowerCase()}
+                  href={navItem.link}
                 >
                   {navItem.navTitle}
                 </Link>

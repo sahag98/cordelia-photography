@@ -19,7 +19,7 @@ export default function Home() {
           </p>
           <span className="text-accent">- Psalm 139:14</span>
         </div>
-        <Link className="self-end md:hidden w-full" href="/contact">
+        <Link className="self-end md:hidden w-full" href="/getintouch">
           <Button
             size={"lg"}
             className="self-end md:hidden w-full font-semibold"

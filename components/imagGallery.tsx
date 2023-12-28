@@ -43,7 +43,7 @@ const ImageGallery = ({ images }: { images: Pictures }) => {
                   className="overflow-hidden rounded-md shadow-md"
                 >
                   <img
-                    onClick={() => openModal(image.url!)}
+                    onClick={() => openModal(image.image!)}
                     className="w-full h-auto rounded-md cursor-pointer lg:rounded-lg"
                     src={image.image}
                     alt={image.ult}

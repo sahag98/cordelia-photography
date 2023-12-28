@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { SendHorizonal } from "lucide-react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useSearchParams } from "next/navigation";
 import {
   Form,
   FormControl,
@@ -31,13 +32,16 @@ const formSchema = z.object({
   message: z.string().min(2, {
     message: "Message must be at least 2 characters.",
   }),
-  type: z.enum(["mini", "full", "byo", "other"], {
+  type: z.enum(["mini", "standard", "byo", "other"], {
     required_error: "You need to select a session type.",
   }),
 });
 
 const Contact = () => {
   const notify = () => toast("We will be in touch with you shortly!");
+  const searchParams = useSearchParams();
+  const search = searchParams.get("type");
+  console.log(search?.toString());
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -45,7 +49,8 @@ const Contact = () => {
       name: "",
       email: "",
       message: "",
-      type: "mini",
+      // @ts-ignore
+      type: search?.toLowerCase() || "mini",
     },
   });
 
@@ -66,7 +71,7 @@ const Contact = () => {
       });
   }
   return (
-    <div className="flex  flex-col gap-5">
+    <div className="flex flex-col gap-5">
       <h1 className="text-center text-primary font-bold text-3xl">Inquiries</h1>
       <section className=" lg:pl-20 p-4 lg:py-0 lg:pr-0 bg-[#101E2C] flex items-center justify-between">
         <div className="space-y-5 w-full lg:w-2/5">
@@ -132,7 +137,7 @@ const Contact = () => {
                     <FormControl>
                       <RadioGroup
                         onValueChange={field.onChange}
-                        defaultValue={field.value}
+                        defaultValue={search?.toLowerCase() || field.value}
                         className="flex items-center gap-5"
                       >
                         <FormItem className="flex items-center space-x-2 space-y-0">
@@ -145,10 +150,10 @@ const Contact = () => {
                         </FormItem>
                         <FormItem className="flex items-center space-x-2 space-y-0">
                           <FormControl>
-                            <RadioGroupItem value="full" />
+                            <RadioGroupItem value="standard" />
                           </FormControl>
                           <FormLabel className="font-normal text-background">
-                            Full
+                            Standard
                           </FormLabel>
                         </FormItem>
                         <FormItem className="flex items-center space-x-2 space-y-0">
@@ -218,7 +223,7 @@ const Contact = () => {
           </Form>
         </div>
         <Image
-          className="lg:w-[750px] hidden lg:flex"
+          className="lg:w-[700px] hidden lg:flex"
           src="/contact.jpg"
           alt="contact img"
           width={2048}

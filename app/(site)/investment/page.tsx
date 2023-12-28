@@ -15,8 +15,7 @@ const Page = () => {
       id: 1,
       title: "Mini",
       price: 50,
-      description:
-        "Example text: Perfect for small businesses/families and simple description about shoot",
+      description: "Still figuring it out",
       perks: [
         { id: 1, text: "20 minutes" },
         { id: 2, text: "5 finished digital images" },
@@ -27,8 +26,7 @@ const Page = () => {
       id: 2,
       title: "Standard",
       price: 100,
-      description:
-        "Example text: Perfect for small businesses/families and simple description about shoot",
+      description: "Perfect for branding and family photos",
       perks: [
         { id: 1, text: "60 minutes" },
         { id: 2, text: "40-50 finished digital images" },
@@ -39,8 +37,7 @@ const Page = () => {
       id: 3,
       title: "BYO",
       price: 75,
-      description:
-        "Example text: Perfect for small businesses/families and simple description about shoot",
+      description: "Perfect for courthouse weddings or small events",
       perks: [
         { id: 1, text: "Time is up to you but definitely not infinite lol" },
         { id: 2, text: "$10/finished digital images" },
@@ -66,7 +63,7 @@ const Page = () => {
             <span className="text-accent text-2xl font-semibold">
               ${investment.price}
             </span>
-            <p className="mb-5 text-primary">{investment.description}</p>
+            <p className="mb-5 text-foreground">{investment.description}</p>
             <ul className="w-full mb-5 space-y-5">
               {investment.perks.map((perk) => (
                 <div key={perk.id} className="flex items-center gap-1">

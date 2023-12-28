@@ -69,11 +69,9 @@ const Page = () => {
             <p className="mb-5 text-primary">{investment.description}</p>
             <ul className="w-full mb-5 space-y-5">
               {investment.perks.map((perk) => (
-                <div className="flex items-center gap-1">
+                <div key={perk.id} className="flex items-center gap-1">
                   <CheckSquare className="text-primary" />
-                  <li className="text-primary" key={perk.id}>
-                    {perk.text}
-                  </li>
+                  <li className="text-primary">{perk.text}</li>
                 </div>
               ))}
             </ul>

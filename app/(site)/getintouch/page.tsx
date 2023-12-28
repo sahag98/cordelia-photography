@@ -84,7 +84,7 @@ const Contact = () => {
                   <FormItem>
                     <FormControl>
                       <Input
-                        className="outline-none text-white"
+                        className="outline-none rounded-none text-white"
                         placeholder="NAME *"
                         {...field}
                       />

@@ -39,8 +39,8 @@ const Page = () => {
       price: 75,
       description: "Perfect for courthouse weddings or small events",
       perks: [
-        { id: 1, text: "Time is up to you but definitely not infinite lol" },
-        { id: 2, text: "$10/finished digital images" },
+        { id: 1, text: "Up to 4 hours" },
+        { id: 2, text: "$2/finished digital images" },
         { id: 3, text: "Add ons Available" },
       ],
     },
@@ -56,7 +56,7 @@ const Page = () => {
       <section className="grid lg:grid-cols-3 grid-cols-1 gap-10 lg:gap-16">
         {investmentData.map((investment) => (
           <div
-            className="bg-[#E5EEF6] rounded-md shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] flex flex-col items-center px-10 py-5"
+            className="bg-[#E5EEF6] rounded-md shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] flex flex-col items-center justify-between px-10 py-5"
             key={investment.id}
           >
             <h2 className="font-bold text-2xl">{investment.title}</h2>

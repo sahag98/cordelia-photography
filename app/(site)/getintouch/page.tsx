@@ -55,6 +55,7 @@ const Contact = () => {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
+    console.log("submitting form");
     const apiEndpoint = "/api/email";
     console.log(values);
     fetch(apiEndpoint, {

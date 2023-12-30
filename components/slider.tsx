@@ -45,6 +45,7 @@ const Slider = () => {
         >
           <Image
             src={imageUrl.img}
+            priority
             // blurDataURL={imageUrl.blurImg}
             // placeholder="blur"
             alt={`image-${i}`}

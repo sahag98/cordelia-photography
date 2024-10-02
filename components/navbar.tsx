@@ -131,7 +131,7 @@ const Navbar = () => {
           </motion.aside>
         )}
       </AnimatePresence> */}
-      <Link className="hidden lg:flex" href="/contact">
+      <Link className="hidden lg:flex" href="/getintouch">
         <Button className="font-semibold hidden md:flex">Get In Touch</Button>
       </Link>
     </nav>

@@ -74,7 +74,7 @@ const Page = () => {
             </ul>
             <Link
               className="w-full"
-              href={`/contact/?type=${investment.title}`}
+              href={`/getintouch/?type=${investment.title}`}
             >
               <Button className="w-full">Schedule Now</Button>
             </Link>
